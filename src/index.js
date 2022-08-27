@@ -1,22 +1,6 @@
-import MoviesApiService from './js/services/moviesAPIService'
+import onFormSubmit from './js/services/getValueQuery'
 
-const moviesApiService = new MoviesApiService()
-console.log(moviesApiService)
+console.log(onFormSubmit)
 
-async function testAPI () {
-    try {
-        const trendingMovies = await moviesApiService.fetchTrendingMovies()
-        console.log(trendingMovies)
+console.log('fh ')
 
-     const movieDetails = await moviesApiService.fetchMovieDetails(539681)
-     console.log(movieDetails)
-
-     const movieByQuert = await moviesApiService.fetchMoviesByQuery('Lion')
-     console.log(movieByQuert)
-
-    } catch  (error) {
-        console.log(error);
-}
-}
-
-testAPI ()
