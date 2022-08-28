@@ -35,7 +35,7 @@ searchForm.addEventListener('submit', onFormSubmit);
       console.log(error);
     }
   
-    functionRender(movieByQuert)
+    // functionRender(movieByQuert)
 
     searchForm.reset();
   }
