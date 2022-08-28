@@ -2,7 +2,11 @@ import MoviesApiService from './moviesAPIService';
 
 const moviesApiService = new MoviesApiService();
 
-const searchForm = document.querySelector(`#search-form`);
+const searchForm = document.querySelector('#search-form');
+
+
+console.log(searchForm)
+
 
 searchForm.addEventListener('submit', onFormSubmit);
 
@@ -24,3 +28,4 @@ export default function onFormSubmit(e) {
   searchForm.reset();
   return moviesApiService.searchQuery;
 }
+
